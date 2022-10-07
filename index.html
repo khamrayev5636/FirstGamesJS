@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonni topish</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <section class="number">
+        <div class="container">
+            <h2 class="text-center text-success my-5 fs-1">Find the Number</h2>
+            <form class="number__form mb-5" method="post">
+                <div class="d-flex">
+                    <input class="form-control me-5 number__input" name="user-number"  type="number" min="1" placeholder="Enter your Number" required>
+                    <button class="number-btn btn btn-success btn-lg shadow-lg">Find</button>
+                </div>
+            </form>
+            <div class="alert-js alert alert-warning w-25 text-black fw-bold shadow-lg mb-5">
+                Urinishlar soni:
+                <span class="number__span-js">6</span>
+            </div>
+            <div class="alert__js alert alert-success text-center fs-1 shadow-lg text-black fw-bold">Raqamingizni toping!!</div>
+        </div>
+    </section>
+
+
+    <script src="main.js"></script>
+
+</body>
+</html>
