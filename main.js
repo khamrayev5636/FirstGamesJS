@@ -4,7 +4,7 @@ var elBtn = document.querySelector(".number-btn ");
 var elText = document.querySelector(".number__span-js");
 var elAlert = document.querySelector(".alert__js");
 var elAlertBox = document.querySelector(".alert-js")
-var x = Math.floor(Math.random() * 100 );
+var x = Math.floor((Math.random() * 100) + 1 );
 // var x = 15;
 
 var Try = 6;
