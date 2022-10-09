@@ -1,3 +1,14 @@
-.alert-js {
+.alert-js , .alert__search {
     max-width: 300px;
+}
+
+.alert__search {
+    display: none;
+}
+
+.alert__search-js {
+    display: block;
+    background-color: #0a520a;
+    color:#fff;
+    font-weight: bold;
 }
