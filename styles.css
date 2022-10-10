@@ -12,3 +12,7 @@
     color:#fff;
     font-weight: bold;
 }
+
+.find__thenumber-alert--js {
+    display: none;
+}

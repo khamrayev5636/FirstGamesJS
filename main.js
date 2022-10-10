@@ -2,7 +2,7 @@ var elForm = document.querySelector(".number__form");
 var elInput = document.querySelector(".number__input");
 var elBtn = document.querySelector(".number-btn ");
 var elText = document.querySelector(".number__span-js");
-var elAlert = document.querySelector(".alert__js");
+var elAlert = document.querySelector(".find__thenumber-alert");
 var elAlertBox = document.querySelector(".alert-js");
 var elAlertSearch = document.querySelector(".alert__search")
 var elAlertTrue = document.querySelector(".alert__true");
@@ -42,13 +42,14 @@ elForm.addEventListener("submit" , function(evt){
     }
     
     if(Try == 0){
-        elAlert.textContent = "Siz Sonni topa olmadiz🙁🙁";
         elInput.setAttribute("disabled" , "disabled");
-        elAlertBox.classList.add("bg-danger");
         elAlertTrue.textContent = x;
         elAlertSearch.classList.add("alert__search-js");
         elText.textContent = "tugadi";
+        elAlertBox.classList.add("bg-danger")
         elBtn.setAttribute("disabled" , true);
-        elAlert.classList.add("bg-danger");
+        elAlert.classList.add("find__thenumber-alert--js");
     }
+
+    elInput.value = "";
 })
