@@ -30,7 +30,7 @@ elForm.addEventListener("submit" , function(evt){
         elAlert.textContent = "Siz kiritgan son x dan kichik";
         elAlert.classList.add("bg-info");
         elAlert.classList.remove("bg-danger");
-    }else if(inputValue == x){
+    }else{
         elAlert.textContent = "Siz Sonni topdingiz😎😎😎";
         elAlertTrue.textContent = x;
         elAlertSearch.classList.add("alert__search-js")
@@ -41,14 +41,22 @@ elForm.addEventListener("submit" , function(evt){
         elAlert.classList.remove("bg-info");
     }
     
-    if(Try == 0){
+    if(Try == 0  && inputValue == x){
         elInput.setAttribute("disabled" , "disabled");
+        elBtn.setAttribute("disabled" , true);
         elAlertTrue.textContent = x;
         elAlertSearch.classList.add("alert__search-js");
         elText.textContent = "tugadi";
+        elAlert.textContent = "Siz Sonni topdingiz😎😎😎";
         elAlertBox.classList.add("bg-danger")
+    }else if(Try == 0){
+        elInput.setAttribute("disabled" , "disabled");
         elBtn.setAttribute("disabled" , true);
-        elAlert.classList.add("find__thenumber-alert--js");
+        elAlertTrue.textContent = x;
+        elAlertSearch.classList.add("alert__search-js");
+        elText.textContent = "tugadi";
+        elAlert.textContent = "Yutqazdingiz!!!😥😥😥😥";
+        elAlertBox.classList.add("bg-danger")
     }
 
     elInput.value = "";
